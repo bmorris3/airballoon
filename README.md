@@ -33,15 +33,13 @@ print airmasses
 >>> [1.0, 0.066238788963745, 0.0034865871171798524, 0.0002466814138637848, 1.1276295753616965e-05, 6.892154501781153e-08]
 ```
 
-Test limiting cases: 
+Test limiting cases for an observer at sea level: 
 ```python
 import airballoon
 print airballoon.airmass(90.0,0.0) # Zenith
 >>> 1.0
 print airballoon.airmass(0.0,0.0) # Horizon
 >>> 35.90116951092913
-
-
 ```
 
 ### How it works
