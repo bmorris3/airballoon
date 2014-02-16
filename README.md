@@ -33,6 +33,30 @@ print airmasses
 >>> [1.0, 0.066238788963745, 0.0034865871171798524, 0.0002466814138637848, 1.1276295753616965e-05, 6.892154501781153e-08]
 ```
 
+Airballoon compliments PyEphem to give you the airmass for astronomical
+targets. PyEphem can tell you the altitude of an object for an observer 
+at a given date, time and location. You can then pass this altitude along
+to airballoon to find the airmass for that target. 
+
+```python
+# Find the altitude of Mars for an observer 10 km above Seattle, WA on 2014/6/1
+import ephem
+seattle_balloon = ephem.Observer()
+seattle_balloon.lat = '47:36:34.9'   # latitude
+seattle_balloon.lon = '-122:19:59.2' # longitude
+seattle_balloon.date = '2014/6/1'    # date
+seattle_balloon.elevation = 10000    # observatory elevation in meters
+mars = ephem.Mars()
+mars.compute(seattle_balloon)
+
+# Find the altitude of Mars for this observer in degrees
+altitude = float(mars.alt)*180/3.14159 
+
+import airballoon
+print airballoon.airmass(altitude,seattle_balloon.elevation) # Find the airmass
+>>> 1.0019598313
+```
+
 ### How it works
 To see a nice TeX-ed up explanation of how airballoon calculates airmass, 
 check out the documentation in the `docs/` folder.
