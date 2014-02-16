@@ -19,7 +19,7 @@ Calculate the airmass for a target 10 degrees above the horizon for an
 observatory 10km above sea level:
 ```python
 import airballoon
-print airballoon.airmass(10,10000)
+print airballoon.airmass(10,10000)  # enter elevation in meters 
 >>> 1.52079630009
 ```
 
