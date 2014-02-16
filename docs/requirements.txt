@@ -1,3 +1,2 @@
 Numpy>=1.6
-numpydoc
 Scipy>=0.1
