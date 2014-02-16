@@ -38,7 +38,7 @@ use them with distinct meanings in airballoon. When airballoon uses the word
 meters. When it says "altitude" it is referring to the direction of the 
 target of your observations, measured in degrees above the horizon.
 
-### Examples
+## Examples
 Calculate the airmass for a target 10 degrees above the horizon for an 
 observatory 10km above sea level:
 ```python
@@ -66,7 +66,7 @@ print airballoon.airmass(0.0,0.0) # Horizon
 >>> 35.90116951092913
 ```
 
-##### Using airballoon with [PyEphem](http://rhodesmill.org/pyephem/)
+### Using airballoon with [PyEphem](http://rhodesmill.org/pyephem/)
 
 Airballoon compliments PyEphem to give you the airmass for astronomical
 targets. PyEphem can tell you the altitude of an object for an observer 
@@ -94,6 +94,6 @@ print airballoon.airmass(altitude,seattle_balloon.elevation) # Find the airmass
 
 
 
-### Contact
+## Contact
 Developed by [Brett M. Morris](http://staff.washington.edu/bmmorris) 
 (University of Washington).
