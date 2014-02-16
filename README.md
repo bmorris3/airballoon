@@ -19,4 +19,4 @@ print airballoon.airmass(10,10000)
 ```
 
 ###### Contact
-Developed by [Brett M. Morris](staff.washington.edu/bmmorris) (University of Washington).
+Developed by [Brett M. Morris](http://staff.washington.edu/bmmorris) (University of Washington).
