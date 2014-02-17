@@ -12,7 +12,8 @@ the package, unzip the archive, change directories into it, and type
 
 `python setup.py install`
 
-and you're ready to go. 
+If you already have the dependencies installed, then you're ready to go. If you 
+don't, download [NumPy and SciPy](http://www.scipy.org/).
 
 ### How it works
 To see a nice TeX-ed up explanation of how airballoon calculates airmass, 
